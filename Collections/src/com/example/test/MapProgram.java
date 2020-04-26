@@ -17,6 +17,17 @@ public class MapProgram {
         System.out.println(languages.put("BASIC", "Beginners All Purposes Instruction Code"));
         System.out.println(languages.put("LISP", "Therein lies madness"));
 
+
+        if(languages.remove("ALGOL","an algorithmic language")){
+            System.out.println("Algol was removed");
+        }else{
+            System.out.println("Algol not removed");
+        }
+        if(languages.replace("LISP","Therein lies madness","a functional programming language")){
+            System.out.println("Lisp was replaced");
+        }else{
+            System.out.println("Lisp was not replaced");
+        }
         for (String key:languages.keySet()){
             System.out.println(key + " : " + languages.get(key));
         }
